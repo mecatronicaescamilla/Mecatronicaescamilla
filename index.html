@@ -21,6 +21,31 @@
     linear-gradient(135deg, #03060f, #0b1220 60%, #040812);
  
 }
+.contact{
+  background: linear-gradient(
+    135deg,
+    rgba(0,229,255,0.18),
+    rgba(0,140,255,0.08)
+  );
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 30px rgba(0,229,255,0.25);
+}
+
+.contact h2{
+  color: #00e5ff;
+}
+
+.contact p{
+  color: #e6f1ff;
+  font-size: 1rem;
+}
+
+.contact a{
+  color: #00e5ff;
+  font-weight: 500;
+  text-decoration: none;
+}
 
 
 
@@ -37,7 +62,24 @@
 .contact{background:linear-gradient(135deg,#0f1b33,#050914);border-radius:20px;padding:2rem;text-align:center;}
 .contact h2{color:var(--accent);margin-bottom:1rem;}
 .contact p{margin:.3rem 0;}
-.btn{display:inline-block;margin-top:1rem;padding:.7rem 1.5rem;border-radius:30px;background:var(--accent);color:#001018;text-decoration:none;font-weight:600;}
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .9rem 2rem;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #00e5ff, #0099ff);
+  color: #001018;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 0 20px rgba(0,229,255,.6);
+  transition: .3s;
+}
+
+.btn:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(0,229,255,.9);
+}
+
 
 footer{text-align:center;padding:1.5rem;color:var(--muted);font-size:.8rem;}
 
