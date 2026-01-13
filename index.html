@@ -13,14 +13,27 @@
       --muted:#9fb3c8;
     }
     *{box-sizing:border-box;margin:0;padding:0;font-family:'Poppins',sans-serif;}
-    body{
+   body::before{
+  content:"";
+  position:fixed;
+  inset:0;
   background:
-    radial-gradient(circle at 20% 20%, rgba(0,229,255,0.18), transparent 40%),
-    radial-gradient(circle at 80% 30%, rgba(0,140,255,0.15), transparent 45%),
-    radial-gradient(circle at 50% 80%, rgba(120,0,255,0.15), transparent 40%),
-    linear-gradient(135deg, #03060f, #0b1220 60%, #040812);
-  color: var(--text);
-  min-height: 100vh;
+    repeating-linear-gradient(
+      90deg,
+      rgba(0,229,255,0.04) 0px,
+      rgba(0,229,255,0.04) 1px,
+      transparent 1px,
+      transparent 90px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(0,229,255,0.04) 0px,
+      rgba(0,229,255,0.04) 1px,
+      transparent 1px,
+      transparent 90px
+    );
+  pointer-events:none;
+  z-index:-1;
 }
 
     header{padding:3rem 1.5rem;text-align:center;}
